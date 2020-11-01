@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && LOGLEVEL=info node .",
+    "front": "cd front && npm install && npm run build",
+    "start": "npm install && npm run front && LOGLEVEL=info node .",
     "dev": "npm install && ./node_modules/.bin/gulp"
   },
   "author": "Flow Health",
